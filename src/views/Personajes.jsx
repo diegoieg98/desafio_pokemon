@@ -37,8 +37,8 @@ const Personajes = () =>{
             <h1>Selecciona un Pokemon</h1>
             <select onChange={(value) => cambioSelect(value)} className="form-select" name="" id="">
                 <option> Pokemones </option>
-            {pokemon.map((poke, index) => (
-                    <option value={index} key={poke.name}>{poke.name}</option>
+            {pokemon.map((poke) => (
+                    <option value={poke.name} key={poke.name}>{poke.name}</option>
                     ))}
             </select>
             <button type="button" onClick={irAlPokemon} className="btn btn-dark">Ver Detalle</button>
