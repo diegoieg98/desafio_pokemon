@@ -11,7 +11,7 @@ function App() {
     <div>
       <Navbar/>
       <Routes>
-        <Route path='/desafio_pokemon' element={<Home/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/personajes' element={<Personajes/>}/>
         <Route path='/personajes/:name' element={<Detalles/>}/>
       </Routes>
